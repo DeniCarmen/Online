@@ -1,0 +1,64 @@
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .float-start {
+    float: left;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.float-end {
+    float: right;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.scrolling-text-container {
+    overflow: hidden; 
+  }
+  
+  .scrolling-text {
+    animation: scrollText 20s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#mainImage {
+  width: 200%;
+  height: 100%;
+  object-fit: cover; 
+
+}
+
+.container.my-5 p {
+  text-align: center; 
+  font-weight: bold; 
+
+}
+
+#loggedInUsername {
+  display: inline; 
+  color: #fff; 
+  margin-left: 40px; 
+  font-weight: bold; 
+  left: 400%; 
+  transform: translateX(-200%);
+}
